@@ -1,24 +1,10 @@
 function setup() {
 createCanvas(800, 600);
-background(225, 213, 176);
+background(220, 210, 180);
 }
 
 
 function draw() {
-  
-//slightly blue-ish background bit
-  fill(198, 200, 179);
-  stroke(198, 200, 179);
-  beginShape();
-  curveVertex(800, 515);
-  curveVertex(531, 518);
-  curveVertex(329, 511);
-  curveVertex(163, 495);
-  curveVertex(53, 500);
-  curveVertex(0, 501);
-  curveVertex(0, 600);
-  curveVertex(800, 600);
-  endShape(CLOSE);
   
 //orange diamond shape
   fill(197, 97, 50);
@@ -29,23 +15,6 @@ function draw() {
   vertex(46, 429);
   vertex(19, 392);
   endShape(CLOSE);
-  
-//orange bottom curve
-  noFill();
-  stroke(198, 137, 101);
-  strokeWeight(2.5);
-  beginShape();
-  curveVertex(566, 555);
-  curveVertex(566, 555);
-  curveVertex(269, 537);
-  curveVertex(144, 520);
-  curveVertex(52, 494);
-  curveVertex(17, 475);
-  curveVertex(3, 453);
-  curveVertex(9, 431);
-  curveVertex(22, 416);
-  curveVertex(22, 416);
-  endShape();
   
 //black square frames
   noFill();
@@ -176,6 +145,22 @@ function draw() {
   curveVertex(width, 541);
   endShape();
   
+//big red curved line
+  noFill();
+  stroke(165, 0, 0);
+  strokeWeight(2.5)
+  beginShape();
+  curveVertex(266, 155);
+  curveVertex(266, 152);
+  curveVertex(202, 169);
+  curveVertex(175, 205);
+  curveVertex(215, 247);
+  curveVertex(316, 287);
+  curveVertex(492, 333);
+  curveVertex(width, 403);
+  curveVertex(width, 403);
+  endShape();
+  
 //big dark curved line
   noFill();
   stroke(20);
@@ -262,8 +247,7 @@ function draw() {
   vertex(0, 536);
   endShape(CLOSE);
   
-//thick red dashes
-  noFill();
+//upper thick red dash
   stroke(181, 47, 45);
   strokeWeight(10);
   beginShape();
@@ -276,88 +260,15 @@ function draw() {
   
   beginShape();
   vertex(117, 45);
+  vertex(117, 45);
+  vertex(91, 33);
   vertex(91, 33);
   endShape();
   
-  beginShape();
-  vertex(638, 140);
-  vertex(626, 144);
-  endShape();
-  
-  beginShape();
-  vertex(642, 201);
-  vertex(643, 205);
-  endShape();
-  
-  beginShape();
-  vertex(640, 237);
-  vertex(645, 240);
-  endShape();
-  
-  beginShape();
-  vertex(670, 253);
-  vertex(679, 251);
-  endShape();
-  
-  point(699, 253);
-  point(792, 317);
-  
-  beginShape();
-  vertex(459, 227);
-  vertex(457, 229);
-  endShape();
-  
-  beginShape();
-  curveVertex(93, 490);
-  curveVertex(93, 490);
-  curveVertex(80, 492);
-  curveVertex(67, 492);
-  curveVertex(67, 492);
-  endShape();
-  
-  beginShape();
-  vertex(410, 235);
-  vertex(407, 236);
-  endShape();
- 
- //thick blue dashes
-   noFill();
-   stroke(32, 74, 152);
-   strokeWeight(14);
-   point(399, 359);
-   point(419, 416);
-   point(475, 451);
-   point(588, 495);
-   point(559, 191);
-   point(197, 262);
-   point(255, 261);
-   point(306, 240);
-   point(249, 51);
-   point(77, 71);
-   point(55, 13);
-   point(421, 4);
-   point(419, 9);
-   
-   //big red curved line
-  noFill();
-  stroke(165, 0, 0);
-  strokeWeight(2.5)
-  beginShape();
-  curveVertex(266, 155);
-  curveVertex(266, 152);
-  curveVertex(202, 169);
-  curveVertex(175, 205);
-  curveVertex(215, 247);
-  curveVertex(316, 287);
-  curveVertex(492, 333);
-  curveVertex(width, 403);
-  curveVertex(width, 403);
-  endShape();
-   
 //bottom small lighter blue curve
   noFill();
   stroke(75, 95, 92);
-  strokeWeight(3);
+  strokeWeight(2);
   beginShape();
   curveVertex(523, 499);
   curveVertex(523, 499);
@@ -365,54 +276,6 @@ function draw() {
   curveVertex(475, 575);
   curveVertex(475, 599);
   curveVertex(475, 599);
-  endShape();
-  
-//skinny black lines
-  noFill();
-  stroke(50);
-  strokeWeight(1.5);
-  beginShape();
-  curveVertex(218, 23);
-  curveVertex(218, 23);
-  curveVertex(367, 35);
-  curveVertex(511, 38);
-  curveVertex(705, 33);
-  curveVertex(800, 28);
-  curveVertex(800, 28);
-  endShape();
-  
-  beginShape();
-  curveVertex(221, 48);
-  curveVertex(221, 48);
-  curveVertex(612, 53);
-  curveVertex(800, 49);
-  curveVertex(800, 49);
-  endShape();
-  
-  beginShape();
-  curveVertex(670, 285);
-  curveVertex(670, 285);
-  curveVertex(507, 270);
-  curveVertex(417, 251);
-  curveVertex(367, 229);
-  curveVertex(333, 201);
-  curveVertex(317, 171);
-  curveVertex(320, 147);
-  curveVertex(334, 123);
-  curveVertex(334, 123);
-  endShape();
-  
-  beginShape();
-  curveVertex(604, 344);
-  curveVertex(604, 344);
-  curveVertex(337, 237);
-  curveVertex(215, 179);
-  curveVertex(168, 150);
-  curveVertex(101, 97);
-  curveVertex(75, 58);
-  curveVertex(73, 27);
-  curveVertex(95, 0);
-  curveVertex(95, 0);
   endShape();
 
 }
