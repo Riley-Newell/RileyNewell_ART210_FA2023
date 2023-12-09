@@ -55,7 +55,7 @@ class Jitter {
   
   //the 'fish' array is looping when I use 'fishing' and I need
   //to figure out how to make it not do that without using noLoop
-  image(fishing, this.x, this.y);
+  image(k, this.x, this.y);
   
   }
 }
