@@ -1,11 +1,11 @@
-let img1, img2, img3, img4;
+let skull1, skull2, skull3, skull4;
 let mic;
 
 function preload() {
-  img1 = loadImage('data/skull1.jpg');
-  img2 = loadImage('data/skull2.jpg');
-  img3 = loadImage('data/skull3.jpg');
-  img4 = loadImage('data/skull4.jpg');
+  skull1 = loadImage('data/skull1.jpg');
+  skull2 = loadImage('data/skull2.jpg');
+  skull3 = loadImage('data/skull3.jpg');
+  skull4 = loadImage('data/skull4.jpg');
 }
 
 function setup() {
@@ -26,12 +26,12 @@ function draw() {
 
   // Display images based on the volume
   if (vol < 0.2) {
-    image(img1, 0, 0, width, height);
+    image(skull1, 0, 0, width, height);
   } else if (vol < 0.4) {
-    image(img2, 0, 0, width, height);
+    image(skull2, 0, 0, width, height);
   } else if (vol < 0.6) {
-    image(img3, 0, 0, width, height);
+    image(skull3, 0, 0, width, height);
   } else {
-    image(img4, 0, 0, width, height);
+    image(skull4, 0, 0, width, height);
   }
 }
